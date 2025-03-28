@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operaciones Booleanas</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Operaciones Booleanas</h1>
+
+  <script>
+    let numberOne = 1;
+    let stringOne = '1';
+
+    let numberThirty = 30;
+    let stringThirty = '30';
+    
+    let numberTen = 10;
+    let stringTen = '10';
+
+    if (numberOne == stringOne) console.log(`Las variables numberOne y stringOne TIENEN el mismo valor pero son de tipos diferentes.`);
+    else console.log(`Las variables numberOne y stringOne NO tienen el mismo valor.`);
+
+    if (numberThirty === stringThirty) console.log(`Las variables numberThirty y stringThirty TIENEN el mismo valor y el MISMO tipo.`);
+    else console.log(`Las variables numberThirty y stringThirty NO tienen el mismo tipo.`);
+
+    if (numberTen == stringTen) console.log(`Las variables numberTen y stringTen TIENEN el mismo valor pero diferente tipo.`);
+    else console.log(`Las variables numberTen y stringTen NO tienen el mismo valor.`);
+  </script>
+</body>
+</html>
