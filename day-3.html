@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructuras de control</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estructuras de control</h1>
+
+  <script>
+    let area = Number(prompt("¿Qué área desea seguir?\n1 = Front-end\n2 = Back-end"));
+
+    if(area === 1) {
+      let framework = prompt("¿Quiere aprender React o Vue?");
+      alert(`¡Genial! Aprender ${framework} es una gran elección.`);
+    } else if(area === 2) {
+      let language = prompt("¿Quieres aprender C# o Java?");
+      alert(`¡Excelente! Aprender ${language} te abrirá muchas puertas.`);
+    } else {
+      alert("Opción no válida. Recarga la página e intenta de nuevo.");
+    }
+
+
+    let specialisation = Number(prompt("¿Quieres seguir especializándote en esta área o convertirte en Fullstack?\n1 = Especializar\n 2 = Fullstack"));
+
+    if (specialisation === 1) {
+      alert("¡Buena desición! Seguir especializándote te hará un experto en tu campo.");
+    } else if(specialisation === 2) {
+      alert("¡Increible! Convertirte en Fullstack te dará mucha versatilidad en el desarrollo.");
+    } else {
+      alert("Opción no válida.");
+    }
+
+    let technologies = [];
+    let next;
+
+    do {
+      let tech = prompt("¿Qué otra tecnología te gustaría aprender?");
+      if(tech) {
+        technologies.push(tech);
+      }
+      next = confirm("¿Quieres agregar otra tecnología?");
+    } while(next);
+
+    alert(`Has decidido aprender sobre: ${technologies.join(", ")}.\n¡Mucho éxito en tu aprendizaje!`);
+  </script>
+</body>
+</html>
