@@ -1,9 +1,12 @@
 # **#7DaysOfCode** :rocket:
 
+
 + [Día 1: Comparación de valores](#día-1-comparación-de-valores-en-javascript)
 + [Día 2: Variables](#día-2-variables)
 + [Día 3: Estructuras de control de flujo](#día-3-estructuras-de-control-de-flujo)
++ [Día 4: Loop y randomización](#día-4-loop-y-randomización)
 
+![](./7dayscode.avif)
 ---
 
 ## Día 1: Comparación de valores
@@ -254,6 +257,49 @@ Es decir, después de la primera vez que pase, el valor de la edad será igual a
 Solo se detendrá cuando el valor de la variable `edad` llegue a 8, que no es menor que 8, y por eso la condición del `while` tendrá un resultado falso.
 
 ✅ [Solución](./day-3.html) 👈
+
+[🔝 Índice](#7daysofcode-rocket)
+
+---
+
+## Día 4: Loop y randomización
+
+¿Alguna vez has jugado a adivinar el número en el que tu amigo o amiga estaba pensando?  
+Hoy volverás a tu infancia y harás exactamente eso.  
+¡Pero ahora, el juego será contra la propia computadora!  
+
+### 🚀 Instrucciones  
+
+Debes crear un pequeño programa que comience con un valor específico predefinido entre 0 y 10 para el número que vas a adivinar (por ejemplo, el **7**).  
+
+A continuación, el programa te preguntará cuál es el valor que deseas adivinar y, si aciertas, te felicitará.  
+Si te equivocas, te dará **2 intentos más**.  
+
+Al final, si no aciertas en ninguno de los intentos, imprimirá cuál era el número inicial.  
+
+Después de que el programa esté funcionando, intenta usar un número aleatorio en lugar de uno predefinido.  
+
+### 📝 Consejo
+
+Piensa muy bien en qué **estructura de repetición** utilizarás para hacer que tu programa se ejecute hasta que se **agoten las 3 oportunidades** o hasta que la persona acierte el número.  
+
+Recuerda que siempre puedes personalizar tu programa como desees.  
+
+No olvides compartirlo en tu GitHub y en tus redes sociales con el hashtag **#7DaysOfCode**.  
+
+### 🔥 Extra
+
+Para hacer que la propia máquina elija el número a adivinar, puedes utilizar algo llamado `Math.random()`.  
+
+Para ello, utiliza el siguiente código:  
+
+```javascript
+Math.floor(Math.random() * (máximo - mínimo + 1) + mínimo)
+```
+
+Donde, por supuesto, tendrás que cambiar los valores de `mínimo` y `máximo` por los límites inferior y superior, respectivamente.
+
+✅ [***Solución***](./day-4.html) 👈
 
 [🔝 Índice](#7daysofcode-rocket)
 
